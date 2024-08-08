@@ -1,16 +1,21 @@
-# Getting Started with Create React App
+# Get started with the Github source code repository
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Please copy the source code to a computer with an IDE that supports using React App using the command
+Git clone https://github.com/binhrobbin/DSS-User-profile.git
 
 ## Available Scripts
-
+After get the project, use the IDE through the Terminal command window pointing to the project folder (cd user-profile)
 In the project directory, you can run:
+
+### `npm install`
+
+To install related support libraries.\
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
+Click on the “Users” button of the Sidebar on the left of the screen to see the information of the users sorted by account name. There you can use the pagination function and select the number of records you want to view
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
