@@ -1,19 +1,21 @@
 import UserService from "../../services/UserService";
 import {useEffect, useState} from "react";
 import "../../assets/css/Users.css"
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 function Users() {
     const [users, setUsers] = useState([]);
     const [numberPaging, setNumberPaging] = useState([]);
     const [page, setPage] = useState(1);
     const [pageSize, setPageSize] = useState(10);
+    const navigation = useNavigate();
 
     useEffect(() => {
        getAll().then().catch()
     }, [page, pageSize]);
     const getAll = async () => {
-        const userList = await UserService.getAll(pageSize,page);
+        try {
+            const userList = await UserService.getAll(pageSize, page);
         userList.results.sort((a, b) => {
             if (a.login.username < b.login.username) return -1;
             if (a.login.username > b.login.username) return 1;
@@ -31,6 +33,10 @@ function Users() {
             }
         }
         setUsers(userList.results);
+        }catch (error){
+            console.error("Error loading posts:", error);
+            navigation(`/access-denined`);
+        }
     }
     const changePageSize = (event) => {
         setPageSize(event.target.value);
