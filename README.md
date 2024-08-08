@@ -14,8 +14,11 @@ To install related support libraries.
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-Click on the “Users” button of the Sidebar on the left of the screen to see the information of the users sorted by account name. There you can use the pagination function and select the number of records you want to view
+Open http://localhost:3000 to view in your browser.
+Click on the “Users” button of the Sidebar on the left of the screen or access http://localhost:3000/users to view the information of the users sorted by account name.
+
+Please wait a moment for the data to be ready
+There you can use the pagination function and select the number of records you want to view
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
