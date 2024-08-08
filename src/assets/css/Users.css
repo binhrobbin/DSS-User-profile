@@ -1,0 +1,22 @@
+.table-post {
+    max-height: 500px; /* Chiều cao tối đa của table */
+    /*max-width: 1150px; !* Chiều cao tối đa của table *!*/
+    overflow-y: auto; /* Thêm thanh cuộn dọc */
+    overflow-x: auto;
+}
+.pagination {
+    /*border: black 1px solid;*/
+    text-align: right;
+    margin-right: 0;
+    padding-left: 0;
+}
+.my-select {
+    text-align: center;
+    border: none;
+    outline: none;
+
+    /*appearance: none; !* Loại bỏ mặc định của trình duyệt *!*/
+}
+.content {
+    text-align: right;
+}
